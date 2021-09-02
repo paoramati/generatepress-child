@@ -1,0 +1,52 @@
+{
+    "namespace": "ais-listo/v1",
+    "routes": {
+        "/ais-listo/v1": {
+            "namespace": "ais-listo/v1",
+            "methods": [
+                "GET"
+            ],
+            "endpoints": [
+                {
+                    "methods": [
+                        "GET"
+                    ],
+                    "args": {
+                        "namespace": {
+                            "required": false,
+                            "default": "ais-listo/v1"
+                        },
+                        "context": {
+                            "required": false,
+                            "default": "view"
+                        }
+                    }
+                }
+            ],
+            "_links": {
+                "self": "https://test.accessitlibrary.com/wp-json/ais-listo/v1"
+            }
+        },
+        "/ais-listo/v1/(?P<type>[a-z0-9_-]+)": {
+            "namespace": "ais-listo/v1",
+            "methods": [
+                "GET"
+            ],
+            "endpoints": [
+                {
+                    "methods": [
+                        "GET"
+                    ],
+                    "args": []
+                }
+            ]
+        }
+    },
+    "_links": {
+        "up": [
+            {
+                "href": "https://test.accessitlibrary.com/wp-json/"
+            }
+        ]
+    }
+}
